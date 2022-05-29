@@ -1,7 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 .lugares{
-
     &__grid{
         display: grid;
         grid-template-columns: repeat(4,30rem);
