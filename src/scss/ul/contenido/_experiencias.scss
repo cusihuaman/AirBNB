@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experincias{
+
+    &__listado{
+        display: grid;
+        grid-template-columns: repeat(3,30rem);
+        column-gap: 2rem;
+        @include m.scrollHorizontal;
+        @include m.tablet{
+            @include m.grid(3, 2rem);
+        }
+    }
+}
+
+.experiencia{
+
+    &__imagen{
+        border-radius: 1rem;
+    }
+    &__titulo{
+       font-weight: 700;
+       text-align: center;
+       padding: 0;
+    }
+    &__descripcion{
+        padding: 0;
+        margin: 0;
+    }
+}
